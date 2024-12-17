@@ -1,3 +1,5 @@
+Powercfg /Hibernate on
+
 Powercfg /Change monitor-timeout-ac 5
 Powercfg /Change disk-timeout-ac 5
 Powercfg /Change standby-timeout-ac 0
