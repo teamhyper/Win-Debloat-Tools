@@ -9,16 +9,4 @@ function Remove-WindowsOld() {
     Remove-ItemVerified -Path "$env:SystemDrive\Windows.old\" -Recurse -Force
 }
 
-$Ask = "Are you sure you want to remove $env:SystemDrive\Windows.old?`nOnly do this AFTER you have moved all your data from there.`n`nList from a few folders:`n- $env:SystemDrive\Windows.old\Users\$env:USERNAME\[...]`n   - AppData`n   - Desktop`n   - Documents`n   - Downloads`n   - Music`n   - Pictures`n   - Videos`n- $env:SystemDrive\Windows.old\ProgramData"
-
-switch (Show-Question -Title "Warning" -Message $Ask -BoxIcon "Warning") {
-    'Yes' {
-        Remove-WindowsOld
-    }
-    'No' {
-        Write-Host "Aborting..."
-    }
-    'Cancel' {
-        Write-Host "Aborting..." # With Yes, No and Cancel, the user can press Esc to exit
-    }
-}
+Remove-WindowsOld

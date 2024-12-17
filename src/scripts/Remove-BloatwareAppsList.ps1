@@ -11,6 +11,7 @@ function Remove-BloatwareAppsList() {
         "Microsoft.BingFoodAndDrink"             # Food And Drink
         "Microsoft.BingHealthAndFitness"         # Health And Fitness
         "Microsoft.BingNews"                     # News
+        "Microsoft.BingSearch"                   # Search
         "Microsoft.BingSports"                   # Sports
         "Microsoft.BingTranslator"               # Translator
         "Microsoft.BingTravel"                   # Travel
@@ -59,6 +60,7 @@ function Remove-BloatwareAppsList() {
         "Clipchamp.Clipchamp"				     # Clipchamp – Video Editor
         "Microsoft.OutlookForWindows"            # Microsoft Outlook
         "MicrosoftTeams"                         # Microsoft Teams
+        "MicrosoftCorporationII.QuickAssist"
         "MSTeams"
         "MicrosoftWindows.Client.WebExperience"  # Taskbar Widgets
 
