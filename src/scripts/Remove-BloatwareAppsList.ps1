@@ -11,6 +11,7 @@ function Remove-BloatwareAppsList() {
         "Microsoft.BingFoodAndDrink"             # Food And Drink
         "Microsoft.BingHealthAndFitness"         # Health And Fitness
         "Microsoft.BingNews"                     # News
+        "Microsoft.BingSearch"                   # Search
         "Microsoft.BingSports"                   # Sports
         "Microsoft.BingTranslator"               # Translator
         "Microsoft.BingTravel"                   # Travel
@@ -60,6 +61,7 @@ function Remove-BloatwareAppsList() {
         # Default Windows 11 apps
         "Clipchamp.Clipchamp"				     # Clipchamp – Video Editor
         "Microsoft.OutlookForWindows"            # Microsoft Outlook
+        "MicrosoftCorporationII.QuickAssist"
         "M*S*Teams"                              # Microsoft Teams (24H2 or older)
         "MicrosoftWindows.Client.WebExperience"  # Taskbar Widgets
 

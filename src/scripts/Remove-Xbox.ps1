@@ -40,16 +40,4 @@ function Remove-Xbox() {
     Disable-XboxGameBarDVRandMode
 }
 
-$Ask = "This will remove and/or disable all the Xbox:`n  - Apps;`n  - Services and;`n  - GameBar;`n  - GameDVR.`n`nDo you want to proceed?"
-
-switch (Show-Question -Title "Warning" -Message $Ask -BoxIcon "Warning") {
-    'Yes' {
-        Remove-Xbox # Remove all Xbox related Apps, services, etc.
-    }
-    'No' {
-        Write-Host "Aborting..."
-    }
-    'Cancel' {
-        Write-Host "Aborting..." # With Yes, No and Cancel, the user can press Esc to exit
-    }
-}
+Remove-Xbox # Remove all Xbox related Apps, services, etc.
