@@ -25,6 +25,7 @@ function Remove-BloatwareAppsList() {
         "Microsoft.MicrosoftOfficeHub"
         "Microsoft.MicrosoftPowerBIForWindows"
         "Microsoft.MicrosoftSolitaireCollection" # MS Solitaire
+        "Microsoft.MinecraftUWP"
         "Microsoft.MixedReality.Portal"
         "Microsoft.NetworkSpeedTest"
         "Microsoft.Office.OneNote"               # MS Office One Note
@@ -40,6 +41,8 @@ function Remove-BloatwareAppsList() {
         "Microsoft.Whiteboard"                   # Microsoft Whiteboard
         "Microsoft.WindowsAlarms"                # Alarms
         "microsoft.windowscommunicationsapps"
+        "Microsoft.Windows.Cortana"
+        "Microsoft.WindowsFeedback"
         "Microsoft.WindowsFeedbackHub"           # Feedback Hub
         "Microsoft.WindowsMaps"                  # Maps
         "Microsoft.WindowsPhone"
@@ -64,9 +67,9 @@ function Remove-BloatwareAppsList() {
 
         # [DIY] Default apps i'll keep
         #"Microsoft.FreshPaint"             # Paint
-        #"Microsoft.MicrosoftStickyNotes"   # Sticky Notes
+        "Microsoft.MicrosoftStickyNotes"   # Sticky Notes
         #"Microsoft.WindowsCalculator"      # Calculator
-        #"Microsoft.WindowsCamera"          # Camera
+        "Microsoft.WindowsCamera"          # Camera
         #"Microsoft.ScreenSketch"           # Snip and Sketch (now called Snipping tool, replaces the Win32 version in clean installs)
         #"Microsoft.Windows.DevHome"        # Dev Home
         #"Microsoft.Windows.Photos"         # Photos / Video Editor
@@ -126,11 +129,11 @@ function Remove-BloatwareAppsList() {
         "DB6EA5DB.PowerDirectorforDell"
         "DB6EA5DB.Power2GoforDell"
         "DB6EA5DB.PowerMediaPlayerforDell"
-        #"DellInc.423703F9C7E0E"                # Alienware OC Controls
-        #"DellInc.6066037A8FCF7"                # Alienware Control Center
-        #"DellInc.AlienwareCommandCenter"       # Alienware Command Center
-        #"DellInc.AlienwareFXAW*"               # Alienware FX AWxx versions
-        #"DellInc.AlienwareFXAW21"              # Alienware FX AW21
+        "DellInc.423703F9C7E0E"                # Alienware OC Controls
+        "DellInc.6066037A8FCF7"                # Alienware Control Center
+        "DellInc.AlienwareCommandCenter"       # Alienware Command Center
+        "DellInc.AlienwareFXAW*"               # Alienware FX AWxx versions
+        "DellInc.AlienwareFXAW21"              # Alienware FX AW21
         "DellInc.DellCustomerConnect"           # Dell Customer Connect
         "DellInc.DellDigitalDelivery"           # Dell Digital Delivery
         "DellInc.DellHelpSupport"
@@ -138,7 +141,7 @@ function Remove-BloatwareAppsList() {
         "DellInc.MyDell"                        # My Dell
 
         # SAMSUNG Bloat
-        #"SAMSUNGELECTRONICSCO.LTD.SamsungSettings1.2"      # Allow user to Tweak some hardware settings
+        "SAMSUNGELECTRONICSCO.LTD.SamsungSettings1.2"      # Allow user to Tweak some hardware settings
         "SAMSUNGELECTRONICSCO.LTD.1412377A9806A"
         "SAMSUNGELECTRONICSCO.LTD.NewVoiceNote"
         "SAMSUNGELECTRONICSCoLtd.SamsungNotes"
@@ -158,7 +161,7 @@ function Remove-BloatwareAppsList() {
     )
 
     $SocialMediaApps = @(
-        # "5319275A.WhatsAppDesktop"  # WhatsApp
+        "5319275A.WhatsAppDesktop"  # WhatsApp
         "BytedancePte.Ltd.TikTok"   # TikTok
         "FACEBOOK.317180B0BB486"    # Messenger
         "FACEBOOK.FACEBOOK"         # Facebook
