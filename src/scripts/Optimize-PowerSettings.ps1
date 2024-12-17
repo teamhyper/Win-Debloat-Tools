@@ -1,6 +1,3 @@
-Powercfg /Hibernate on
-
-
 # Syntax
 #   powercfg [Options]
 #      /Change settingvalue
@@ -21,6 +18,8 @@ Powercfg /Hibernate on
 #            Enable or disable the hibernate feature.
 #            This will also turn off Fast Startup (or hybrid sleep)
 #            Hibernate timeout is not supported on all computers.
+
+Powercfg /Hibernate on
 
 Powercfg /Change monitor-timeout-ac 5
 Powercfg /Change disk-timeout-ac 5
