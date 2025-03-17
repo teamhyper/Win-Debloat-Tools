@@ -1,4 +1,4 @@
-Import-Module -DisableNameChecking "$PSScriptRoot\..\Title-Templates.psm1"
+﻿Import-Module -DisableNameChecking "$PSScriptRoot\..\Title-Templates.psm1"
 Import-Module -DisableNameChecking "$PSScriptRoot\..\ui\Show-MessageDialog.psm1"
 
 $Script:DoneTitle = "Information"
@@ -18,13 +18,6 @@ function Update-AllPackage() {
         choco upgrade all --ignore-dependencies --yes | Out-Host
     } Catch {
         Write-Status -Types "!" -Status "Failed to upgrade packages through Chocolatey (maybe it's uninstalled?)" -Warning
-    }
-
-    Try {
-        Write-Caption "WSL"
-        wsl --update | Out-Host
-    } Catch {
-        Write-Status -Types "!" -Status "Failed to upgrade packages through WSL (maybe it's uninstalled?)" -Warning
     }
 
     Show-MessageDialog -Title "$DoneTitle" -Message "$DoneMessage"

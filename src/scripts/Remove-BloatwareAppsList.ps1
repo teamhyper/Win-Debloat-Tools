@@ -18,6 +18,7 @@ function Remove-BloatwareAppsList() {
         "Microsoft.BingWeather"                  # Weather
         "Microsoft.CommsPhone"
         "Microsoft.ConnectivityStore"
+        "Microsoft.Copilot"                      # Copilot
         "Microsoft.GetHelp"
         "Microsoft.Getstarted"
         "Microsoft.Messaging"
@@ -52,6 +53,7 @@ function Remove-BloatwareAppsList() {
         "Microsoft.YourPhone"                    # Your Phone
         "Microsoft.ZuneMusic"                    # Groove Music / (New) Windows Media Player
         "Microsoft.ZuneVideo"                    # Movies & TV
+        "MicrosoftWindows.Client.CoPilot"        # Copilot Dependency
 
         # Apps which other apps depend on
         "Microsoft.Advertising.Xaml"
