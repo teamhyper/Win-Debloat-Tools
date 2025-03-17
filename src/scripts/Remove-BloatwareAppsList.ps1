@@ -179,7 +179,7 @@ function Remove-BloatwareAppsList() {
         "*Netflix*"                 # Netflix
         "*Plex*"                    # Plex
         "*SlingTV*"
-        "SpotifyAB.SpotifyMusic"    # Spotify
+        #"SpotifyAB.SpotifyMusic"    # Spotify
         "*TuneInRadio*"
     )
 
