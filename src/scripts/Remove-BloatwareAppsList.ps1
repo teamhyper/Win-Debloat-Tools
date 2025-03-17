@@ -61,9 +61,9 @@ function Remove-BloatwareAppsList() {
         # Default Windows 11 apps
         "Clipchamp.Clipchamp"				     # Clipchamp – Video Editor
         "Microsoft.OutlookForWindows"            # Microsoft Outlook
-        "MicrosoftTeams"                         # Microsoft Teams
+        #"MicrosoftTeams"                         # Microsoft Teams
         "MicrosoftCorporationII.QuickAssist"
-        "MSTeams"
+        #"MSTeams"
         "MicrosoftWindows.Client.WebExperience"  # Taskbar Widgets
 
         # [DIY] Remove the # to Uninstall
@@ -180,7 +180,7 @@ function Remove-BloatwareAppsList() {
         "*Netflix*"                 # Netflix
         "*Plex*"                    # Plex
         "*SlingTV*"
-        "SpotifyAB.SpotifyMusic"    # Spotify
+        #"SpotifyAB.SpotifyMusic"    # Spotify
         "*TuneInRadio*"
     )
 
