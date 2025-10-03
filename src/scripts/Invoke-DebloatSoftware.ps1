@@ -4,6 +4,7 @@ Import-Module -DisableNameChecking "$PSScriptRoot\..\lib\Title-Templates.psm1"
 Import-Module -DisableNameChecking "$PSScriptRoot\..\lib\debloat-helper\Remove-ItemVerified.psm1"
 
 # Adapted from this ChrisTitus script: https://github.com/ChrisTitusTech/win10script
+# If any of these URL domains change or get compromised tell me via e-mail.
 
 function Invoke-DebloatSoftware() {
     [CmdletBinding()]

@@ -1,9 +1,11 @@
-### Future
+# ROADMAP
+
+## To Do (Cancelled)
 
 - [ ] Unpin All "mocked" apps (Apps on the Start Menu which are not installed, but are there).
-- [ ] Install Winget via Chocolatey as an another option.
+- [ ] Install Winget via Chocolatey as another option.
 
-### 2023v2
+## 2023v2
 
 - [x] Rename all powershell scripts to match it's naming convention.
 - [x] Add more features do the GUI by category (Scheduled Tasks, Services, Optional Features, Windows Capabilities, etc).
@@ -17,7 +19,7 @@
 - [x] Do not add Daily Upgrade tasks to Winget/Chocolatey automatically.
 - [x] Only install Winget/Chocolatey/WSL on demand, lower startup time and get strict to the point.
 
-### 2023v1
+## 2023v1
 
 - [x] Remove more Apps
 - [x] Change Windows Update automatic download and install behavior.
@@ -29,7 +31,7 @@
 - [x] Refactor overly complex functions.
 - [x] Add new lib to manage Folder/Registry Paths.
 - [x] Fix all imports.
-- [x] Allow usage of wildcards (*) to select a wider range of apps.
+- [x] Allow usage of wildcards (\*) to select a wider range of apps.
 - [x] Add autocomplete to most lib functions.
 - [x] Fix Winget and Chocolatey installation.
 - [x] Fix the UI from GUI version, allowing more resolutions, and window expansion and shrinking.
@@ -37,14 +39,14 @@
 - [x] Refactor the GUI to get colors through a function.
 - [x] Change configuration from Microsoft Edge to prevent running in background.
 
-### 2022v3
+## 2022v3
 
 - [x] Encrypted DNS is NOT enabled anymore, needed OFF when using public Wi-Fi with redirect to login page or Pi-hole.
 - [x] Fixed Xbox Game Bar and DVR tweaks.
 - [x] Fixed policies related to Phone Linking.
 - [x] Finally added a good design to be the script banner.
 
-### 2022v2
+## 2022v2
 
 - [x] GUI should scale with DPI with 1 monitor.
   - If the hardware has more than 1 monitor, choose the 2nd method to select the screen resolution (doesn't take DPI).
@@ -59,7 +61,7 @@
 - [x] It is possible to **recover** or **disable** some system apps and other features that was only applied on the scripts through GUI.
 - [x] As prompted, the script does NOT remove OneDrive automatically, it is located on the GUI now.
 
-### 2022v1
+## 2022v1
 
 - [x] Update the GUI design to finally look like a real "program", not a weird non-symmetrical interface, which allows to add even more tweaks.
 - [x] Added CI to scan the PowerShell files, then show warnings and errors to fix.
@@ -77,7 +79,7 @@
 - [x] Use tabs to move through pages on GUI.
 - [x] Upgrade all apps through GUI
 
-### 2021v2
+## 2021v2
 
 - [x] Join other scripts that are helpful inside `src/utils` and `src/utils/DIY` folders.
 - [x] Use `Winget` and `Chocolatey`, and update softwares daily, using `winget` as the main package manager.
@@ -88,7 +90,7 @@
 - [x] Added option to Remove Xbox (mostly).
 - [x] Easy full install of WSL2 for Windows 11.
 
-### 2021v1
+## 2021v1
 
 - [x] Port the remaining W4RH4WK's code into `src/scripts`, then improve what i tought that should've been improved.
 - [x] Put the credits to each person from who i collected the scripts.
@@ -103,7 +105,7 @@
 - [x] Removed some of the _thirdy-party_ software running with the script and only keep AdwCleaner and OOShutUp10 that could be automated.
 - [x] Introduced a GUI to the script, fixed most GUI related bugs, this way it make scripts more accessible and Software Installations A LOT easier.
 
-### 2020v1
+## 2020v1
 
 - [x] Switch to the `main` branch.
 - [x] Refactor all possible `Command Prompt/Registry` code into `Powershell` code

@@ -180,8 +180,8 @@ function Show-GUI() {
 
     # ==> T1 Panel 2
     $ClDebloatTools = New-Label -Text "System Debloat Tools" -Width $LayoutT1.PanelElementWidth -Height $LayoutT1.CaptionLabelHeight -LocationX $LayoutT1.PanelElementX -LocationY 0 -FontSize $LayoutT1.Heading[2] -FontStyle 'Bold'
-    $ApplyTweaks = New-Button -Text "Apply Tweaks" -Width $LayoutT1.PanelElementWidth -Height $LayoutT1.ButtonHeight -LocationX $LayoutT1.PanelElementX -ElementBefore $ClDebloatTools -FontSize $LayoutT1.Heading[3] -FontStyle 'Bold' -ForeColor $Colors.Cyan
-    $UndoTweaks = New-Button -Text "Undo Tweaks" -Width $LayoutT1.PanelElementWidth -Height $LayoutT1.ButtonHeight -LocationX $LayoutT1.PanelElementX -FontSize $LayoutT1.Heading[3] -ElementBefore $ApplyTweaks -MarginTop $LayoutT1.DistanceBetweenElements -ForeColor $Colors.WarningYellow
+    $ApplyTweaks = New-Button -Text "Apply Tweaks" -Width $LayoutT1.PanelElementWidth -Height $LayoutT1.ButtonHeight -LocationX $LayoutT1.PanelElementX -ElementBefore $ClDebloatTools -FontSize $LayoutT1.Heading[3] -FontStyle 'Bold' -BackColor $Colors.Cyan -ForeColor $Colors.DarkGray
+    $UndoTweaks = New-Button -Text "Undo Tweaks" -Width $LayoutT1.PanelElementWidth -Height $LayoutT1.ButtonHeight -LocationX $LayoutT1.PanelElementX -FontSize $LayoutT1.Heading[3] -ElementBefore $ApplyTweaks -MarginTop $LayoutT1.DistanceBetweenElements -BackColor $Colors.WarningYellow -ForeColor $Colors.DarkGray
     $DiskCleanUp = New-Button -Text "Run a Disk Cleanup" -Width $LayoutT1.PanelElementWidth -Height $LayoutT1.ButtonHeight -LocationX $LayoutT1.PanelElementX -FontSize $LayoutT1.Heading[3] -ElementBefore $UndoTweaks -MarginTop $LayoutT1.DistanceBetweenElements -ForeColor $Colors.Cyan
     $RemoveTemporaryFiles = New-Button -Text "Remove Temporary Files" -Width $LayoutT1.PanelElementWidth -Height $LayoutT1.ButtonHeight -LocationX $LayoutT1.PanelElementX -FontSize $LayoutT1.Heading[3] -ElementBefore $DiskCleanUp -MarginTop $LayoutT1.DistanceBetweenElements -ForeColor $Colors.Cyan
     $RemoveWindowsOld = New-Button -Text "Remove Windows.old Folder" -Width $LayoutT1.PanelElementWidth -Height $LayoutT1.ButtonHeight -LocationX $LayoutT1.PanelElementX -FontSize $LayoutT1.Heading[3] -ElementBefore $RemoveTemporaryFiles -MarginTop $LayoutT1.DistanceBetweenElements -ForeColor $Colors.WarningYellow
@@ -307,7 +307,7 @@ function Show-GUI() {
     $InstallTranslucentTB = New-CheckBox -Text "TranslucentTB" -Width $LayoutT2.PanelElementWidth -Height $LayoutT2.CheckBoxHeight -LocationX $LayoutT2.PanelElementX -FontSize $LayoutT2.Heading[3] -ElementBefore $InstallRoundedTB
 
     # ==> T2 Panel 2
-    $InstallSelected = New-Button -Text "Install Selected" -Width $LayoutT2.PanelElementWidth -Height $LayoutT2.ButtonHeight -LocationX $LayoutT2.PanelElementX -LocationY 0 -FontSize $LayoutT2.Heading[3] -FontStyle "Bold"
+    $InstallSelected = New-Button -Text "Install Selected" -Width $LayoutT2.PanelElementWidth -Height $LayoutT2.ButtonHeight -LocationX $LayoutT2.PanelElementX -LocationY 0 -FontSize $LayoutT2.Heading[3] -FontStyle "Bold" -BackColor $Colors.White -ForeColor $Colors.DarkGray
 
     $ClWebBrowsers = New-Label -Text "Web Browsers" -Width $LayoutT2.PanelElementWidth -Height $LayoutT2.CaptionLabelHeight -LocationX $LayoutT2.PanelElementX -FontSize $LayoutT2.Heading[2] -FontStyle 'Bold' -ElementBefore $InstallSelected
     $InstallBraveBrowser = New-CheckBox -Text "Brave Browser" -Width $LayoutT2.PanelElementWidth -Height $LayoutT2.CheckBoxHeight -LocationX $LayoutT2.PanelElementX -FontSize $LayoutT2.Heading[3] -ElementBefore $ClWebBrowsers
